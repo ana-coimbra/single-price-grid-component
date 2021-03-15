@@ -1,5 +1,5 @@
 :root {
-  --cyan:hsl(179, 43%, 74%);
+  --cyan:hsl(179, 43%, 55%);
   --cyandark:hsl(179, 62%, 43%); 
   --yellow: hsl(71, 73%, 54%);
   --grey: hsl(204, 43%, 93%);
@@ -50,11 +50,11 @@ body {
   color: #fff;
   background-color: var(--cyandark);
   border-bottom-left-radius: 10px;
-  flex-grow: 2;
   padding: 40px;
 }
 
 .right-container {
+  color: #fff;
   background-color: var(--cyan);
   border-bottom-right-radius: 10px;
   flex-grow: 2;
@@ -109,3 +109,15 @@ body {
   background-color: hsl(71, 63%, 54%);
 }
 
+/* Right-container */
+
+.list {
+  list-style-type: none;  
+  padding-top: 15px;
+}
+
+.list li {
+  color: var(--grey);
+  font-size: 13px;
+  padding-top: 6px;
+}

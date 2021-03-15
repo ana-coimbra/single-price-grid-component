@@ -1,10 +1,9 @@
 :root {
-  --cyan:hsl(179, 43%, 55%);
-  --cyandark:hsl(179, 62%, 43%); 
+  --cyan: hsl(179, 43%, 55%);
+  --cyandark: hsl(179, 62%, 43%);
   --yellow: hsl(71, 73%, 54%);
   --grey: hsl(204, 43%, 93%);
   --greyblue: hsl(218, 22%, 67%);
-  
 }
 
 * {
@@ -15,7 +14,7 @@
 
 body {
   background-color: var(--grey);
-  font-family:  'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 16px;
   font-weight: 400;
   width: 1140px;
@@ -29,7 +28,7 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
- 
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
   width: 660px;
   height: 490px;
   margin: 0 auto;
@@ -50,7 +49,7 @@ body {
   color: #fff;
   background-color: var(--cyandark);
   border-bottom-left-radius: 10px;
-  
+
   padding: 40px;
 }
 
@@ -81,7 +80,6 @@ body {
 
 /* Left-container */
 
-
 .price {
   display: inline-block;
   font-size: 32px;
@@ -98,7 +96,7 @@ body {
   background-color: var(--yellow);
   border: none;
   border-radius: 5px;
-  box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
   font-size: 16px;
   padding: 15px 95px;
   margin-top: 30px;
@@ -113,7 +111,7 @@ body {
 /* Right-container */
 
 .list {
-  list-style-type: none;  
+  list-style-type: none;
   padding-top: 15px;
 }
 
@@ -125,7 +123,7 @@ body {
 
 /* Footer */
 
-.attribution  {
+.attribution {
   color: var(--greyblue);
   font-size: 13px;
   text-align: center;
@@ -138,9 +136,8 @@ body {
 }
 
 .attribution a:hover {
-  color:  hsl(218, 22%, 40%);
+  color: hsl(218, 22%, 40%);
 }
-
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   body {

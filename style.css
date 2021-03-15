@@ -30,8 +30,8 @@ body {
   display: flex;
   flex-direction: column;
  
-  width: 640px;
-  height: 480px;
+  width: 660px;
+  height: 490px;
   margin: 0 auto;
 }
 
@@ -43,13 +43,14 @@ body {
   display: flex;
   align-content: flex-end;
   flex-direction: row;
-  height: 260px;
+  height: 270px;
 }
 
 .left-container {
   color: #fff;
   background-color: var(--cyandark);
   border-bottom-left-radius: 10px;
+  
   padding: 40px;
 }
 
@@ -120,4 +121,22 @@ body {
   color: var(--grey);
   font-size: 13px;
   padding-top: 6px;
+}
+
+/* Footer */
+
+.attribution  {
+  color: var(--greyblue);
+  font-size: 13px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.attribution a {
+  color: var(--greyblue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color:  hsl(218, 22%, 40%);
 }

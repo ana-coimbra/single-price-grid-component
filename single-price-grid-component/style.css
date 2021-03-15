@@ -1,0 +1,42 @@
+:root {
+  --cyan:hsl(179, 43%, 74%);
+  --cyandark:hsl(179, 62%, 43%); 
+  --yellow: hsl(71, 73%, 54%);
+  --grey: hsl(204, 43%, 93%);
+  --greyblue: hsl(218, 22%, 67%);
+  
+}
+
+body {
+  background-color: var(--grey);
+  font-family:  'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  width: 1140px;
+  margin: 10rem auto;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  height: 480px;
+  margin: 0 auto;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  height: 260px;
+}
+
+.left-container {
+  background-color: var(--cyandark);
+  flex-grow: 2;
+}
+
+.right-container {
+  background-color: var(--cyan);
+  flex-grow: 2;
+}

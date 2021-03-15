@@ -140,3 +140,67 @@ body {
 .attribution a:hover {
   color:  hsl(218, 22%, 40%);
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    font-size: 13px;
+    width: 320px;
+    margin: 4rem auto;
+  }
+
+  /* Containers  */
+
+  .container {
+    border-radius: 5px;
+    width: 310px;
+    height: 725px;
+  }
+
+  .top-container {
+    padding: 30px;
+  }
+
+  .bottom-container {
+    align-content: none;
+    flex-direction: column;
+  }
+
+  .left-container {
+    border-bottom-left-radius: 0;
+    padding: 30px;
+  }
+
+  .right-container {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px;
+  }
+
+  /* Top-container */
+
+  .main-heading {
+    font-size: 18px;
+  }
+
+  .description {
+    display: inline;
+    line-height: 1.8;
+  }
+
+  /* Left-container */
+
+  .price {
+    font-size: 30px;
+    margin: 15px 5px 10px;
+  }
+
+  .month {
+    color: var(--grey);
+  }
+
+  .sign-up {
+    font-size: 14px;
+    padding: 15px 100px;
+  }
+}

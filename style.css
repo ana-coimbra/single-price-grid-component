@@ -1,9 +1,10 @@
 :root {
-  --cyan: hsl(179, 43%, 55%);
-  --cyandark: hsl(179, 62%, 43%);
+  --cyan:hsl(179, 43%, 55%);
+  --cyandark:hsl(179, 62%, 43%); 
   --yellow: hsl(71, 73%, 54%);
   --grey: hsl(204, 43%, 93%);
   --greyblue: hsl(218, 22%, 67%);
+  
 }
 
 * {
@@ -14,7 +15,7 @@
 
 body {
   background-color: var(--grey);
-  font-family: "Karla", sans-serif;
+  font-family:  'Karla', sans-serif;
   font-size: 16px;
   font-weight: 400;
   width: 1140px;
@@ -26,30 +27,28 @@ body {
 .container {
   background-color: #fff;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);  
   width: 660px;
-  height: 490px;
+  height: 480px;
   margin: 0 auto;
 }
 
 .top-container {
+  grid-column: 1 / -1;
   padding: 40px;
 }
 
 .bottom-container {
-  display: flex;
-  align-content: flex-end;
-  flex-direction: row;
   height: 270px;
 }
 
 .left-container {
   color: #fff;
   background-color: var(--cyandark);
-  border-bottom-left-radius: 10px;
-
+  border-bottom-left-radius: 10px;  
   padding: 40px;
 }
 
@@ -57,9 +56,8 @@ body {
   color: #fff;
   background-color: var(--cyan);
   border-bottom-right-radius: 10px;
-  flex-grow: 2;
   padding: 40px;
-}
+} 
 
 /* Top-container */
 
@@ -80,6 +78,7 @@ body {
 
 /* Left-container */
 
+
 .price {
   display: inline-block;
   font-size: 32px;
@@ -96,7 +95,7 @@ body {
   background-color: var(--yellow);
   border: none;
   border-radius: 5px;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 8px rgba(0,0,0,0.1);
   font-size: 16px;
   padding: 15px 95px;
   margin-top: 30px;
@@ -111,7 +110,7 @@ body {
 /* Right-container */
 
 .list {
-  list-style-type: none;
+  list-style-type: none;  
   padding-top: 15px;
 }
 
@@ -123,7 +122,7 @@ body {
 
 /* Footer */
 
-.attribution {
+.attribution  {
   color: var(--greyblue);
   font-size: 13px;
   text-align: center;
@@ -136,8 +135,9 @@ body {
 }
 
 .attribution a:hover {
-  color: hsl(218, 22%, 40%);
+  color:  hsl(218, 22%, 40%);
 }
+
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
@@ -149,6 +149,9 @@ body {
   /* Containers  */
 
   .container {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, 1fr);  
     border-radius: 5px;
     width: 310px;
     height: 725px;
@@ -156,11 +159,6 @@ body {
 
   .top-container {
     padding: 30px;
-  }
-
-  .bottom-container {
-    align-content: none;
-    flex-direction: column;
   }
 
   .left-container {

@@ -32,17 +32,13 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);  
   width: 660px;
-  height: 480px;
+  height: 490px;
   margin: 0 auto;
 }
 
 .top-container {
   grid-column: 1 / -1;
   padding: 40px;
-}
-
-.bottom-container {
-  height: 270px;
 }
 
 .left-container {
